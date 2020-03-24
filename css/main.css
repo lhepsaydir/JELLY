@@ -1,0 +1,100 @@
+
+a{
+    float: left;
+    text-decoration: none;
+    text-decoration: none;
+  }
+
+  a:hover{
+    opacity: 0.5;
+  }
+  a:visited{
+      color: white;
+  }
+
+nav{
+    position:relative;
+    top: 0;
+    width: 100vw;
+    background-color: teal;
+    overflow: hidden;
+    padding: 2vw;
+    }   
+
+li{
+    color: white;
+    font-family: 'PT Sans Narrow', sans-serif;
+    list-style-type: none;     
+    /*when I specify 2 values to margin, the first one is for the top and bottom side, the second for the left and right side*/
+    margin: 1vw 1vw;
+    /* our font-size will be 3% of the height of the viewport */
+    font-size: 4vh;
+      }
+
+ul{
+    float: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0;
+    padding: 0;
+    display: flex
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+hr {
+    display: block;
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    margin-left: 100px;
+    margin-right: 100px;
+    border-style: inset;
+    border-width: 3px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+
+  }
+
+.container {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    color: black;
+    font-family: 'PT Sans Narrow', sans-serif;
+}
+
+.hero {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-family: 'Amatic SC', cursive;
+    font-weight: bold;
+    font-size: 100px;
+}
+
+.text {
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Amatic SC', cursive;
+    color: black;
+}
+
+.secondary {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'PT Sans Narrow', sans-serif;
+    color: black; 
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
