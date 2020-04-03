@@ -1,0 +1,148 @@
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+  background-color: #ffc9c9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.navContainer .navItem .dot :hover {
+  color: white;
+}
+
+h1 {
+  margin: 25px;
+  color: #5fbabc;
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+}
+
+.hero {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-weight: 600;
+  font-size: 100px;
+}
+
+.bottomBorder {
+  margin-left: 40px;
+  margin-right: 40px;
+  border-bottom: solid;
+  border-color: #ffc9c9;
+  border-width: 2px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItem li {
+  margin: 0 12px;
+}
+
+.navItem:first-child > div {
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.navItem:last-child > ul {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ffc9c9;
+}
+
+.indexContainer {
+  height: 100vh;
+  width: auto;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+
+.indexChild {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/IndexPic.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.picsWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.pics {
+  height: 300px;
+  width: auto;
+  margin: 2vh;
+}
+/* Style all font awesome icons */
+.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 50%;
+  background: #ffc9c9;
+  color: black;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  color: white;
+}
