@@ -1,0 +1,236 @@
+body {
+  font-family: "PT Sans Narrow", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.dot {
+  height: 60px;
+  width: 60px;
+  background-color: #ffc9c9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+}
+.navContainer .navItem .dot :hover {
+  color: white;
+}
+
+h1 {
+  margin: 25px;
+  color: #5fbabc;
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 60px;
+  text-align: center;
+}
+
+h3 {
+  color: #5fbabc;
+  font-family: "Amatic SC", cursive;
+  font-weight: 400;
+  font-size: 30px;
+  text-align: center;
+  margin: 0;
+}
+
+.aboutMeTextSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMeTextSecondary .iconWrapper h3 {
+  margin: 0;
+}
+
+.iconWrapper h3 {
+  margin-left: 15px;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  font-family: "PT Sans Narrow", sans-serif;
+  color: black;
+  margin: 10px 15vh 0 15vh;
+}
+
+.hero {
+  position: absolute;
+  top: 25%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+br {
+  margin: 20px;
+}
+
+.hero h1 {
+  font-weight: 700;
+  font-size: 10vh;
+  color: white;
+}
+
+.hero p {
+  color: white;
+  font-weight: 200;
+  font-size: 4vh;
+  opacity: 0.85;
+}
+
+.bottomBorder {
+  margin-left: 40px;
+  margin-right: 40px;
+  border-bottom: solid;
+  border-color: #ffc9c9;
+  border-width: 3px;
+}
+
+.navContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.navItem {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navItem li {
+  margin: 0 12px;
+}
+
+.navItem:first-child > div {
+  margin-right: auto;
+  margin-left: 40px;
+}
+
+.navItem:last-child > ul {
+  margin-left: auto;
+  margin-right: 20px;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ffc9c9;
+}
+
+.indexContainer {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+  margin: 20px;
+}
+
+.indexChild {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/IndexPic.JPG");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.iconWrapper {
+  display: flex;
+  width: 20vw;
+  border-bottom: solid;
+  border-color: #ffc9c9;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.picsWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeText p {
+  margin: 10px 0 0 0;
+}
+
+.classes {
+  margin: 0 15vh 0px 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMeTextSecondary p,
+.classes p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.picsRow {
+  height: 350px;
+  width: auto;
+  margin: 2vh;
+}
+
+.aboutMePics {
+  width: 20vw;
+  height: 95%;
+  margin: 0 40px 0 40px;
+}
+
+a.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffc9c9;
+  color: black;
+}
+
+/* Add a hover effect if you want */
+a.fa:hover {
+  color: white;
+}
+
+span.fa {
+  background: none;
+  font-size: 15px;
+  color: #5fbabc;
+}
+
+span.fa:hover {
+  color: #5fbabc;
+}
