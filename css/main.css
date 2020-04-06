@@ -31,8 +31,22 @@ h3 {
   font-weight: 400;
   font-size: 30px;
   text-align: center;
-  padding-left: 20px;
   margin: 0;
+}
+
+.aboutMeTextSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMeTextSecondary .iconWrapper h3 {
+  margin: 0;
+}
+
+.iconWrapper h3 {
+  margin-left: 15px;
 }
 
 p {
@@ -40,8 +54,7 @@ p {
   text-align: center;
   font-family: "PT Sans Narrow", sans-serif;
   color: black;
-  margin-left: 15vw;
-  margin-right: 15vw;
+  margin: 10px 15vh 0 15vh;
 }
 
 .hero {
@@ -58,13 +71,14 @@ br {
 
 .hero h1 {
   font-weight: 700;
-  font-size: 20vh;
+  font-size: 10vh;
   color: white;
 }
+
 .hero p {
   color: white;
   font-weight: 200;
-  font-size: 6vh;
+  font-size: 4vh;
   opacity: 0.85;
 }
 
@@ -73,7 +87,7 @@ br {
   margin-right: 40px;
   border-bottom: solid;
   border-color: #ffc9c9;
-  border-width: 2px;
+  border-width: 3px;
 }
 
 .navContainer {
@@ -145,16 +159,55 @@ a:hover {
   background-size: cover;
 }
 
+.iconWrapper {
+  display: flex;
+  width: 20vw;
+  border-bottom: solid;
+  border-color: #ffc9c9;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
 .picsWrapper {
   display: flex;
   justify-content: center;
   width: 100%;
 }
 
-.pics {
-  height: 300px;
+.aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.aboutMeText p {
+  margin: 10px 0 0 0;
+}
+
+.classes {
+  margin: 0 15vh 0px 15vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMeTextSecondary p,
+.classes p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.picsRow {
+  height: 350px;
   width: auto;
   margin: 2vh;
+}
+
+.aboutMePics {
+  width: 20vw;
+  height: 95%;
+  margin: 0 40px 0 40px;
 }
 
 a.fa {
@@ -172,15 +225,12 @@ a.fa:hover {
   color: white;
 }
 
-i.fa {
+span.fa {
   background: none;
-  font-size: 20px;
-  flex: 1;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  font-size: 15px;
+  color: #5fbabc;
 }
 
-i.fa:hover {
-  color: black;
+span.fa:hover {
+  color: #5fbabc;
 }
