@@ -205,8 +205,8 @@ a:hover {
 }
 
 .aboutMePics {
-  width: 20vw;
-  height: 95%;
+  max-width: 300px;
+  height: auto;
   margin: 0 40px 0 40px;
 }
 
