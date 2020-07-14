@@ -1,96 +1,89 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link
-      href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
-    <link rel="stylesheet" href="./css/main.css" />
-    <title>Flo.with.bro</title>
-  </head>
 
-  <link rel="icon" href="./img/favicon32.png" sizes="16x16" type="png" />
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Amatic+SC&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+  <link rel="stylesheet" href="./css/main.css" />
+  <title>Flo.with.bro</title>
+  <script type="text/javascript" src="./scripts/burgerNav.js"></script>
 
-  <body>
-    <header>
-      <nav class="navContainer">
-        <div class="navItem">
-          <div class="dot">
-            <a href="./index.html">FlowithBro</a>
-          </div>
-        </div>
-        <div class="navItem">
-          <ul>
-            <li>
-              <a href="./About Me.html">About Me</a>
-            </li>
-            <li>
-              <a href="./Art.html">Projects</a>
-            </li>
-            <li>
-              <img
-                src="./img/yinyang.png"
-                alt="Bronagh OShea Yoga"
-                height="40px"
-              />
-            </li>
-            <li>
-              <a href="./Classes.html">Classes</a>
-            </li>
-            <li>
-              <a href="./Contact.html">Contact Me</a>
-            </li>
-          </ul>
-        </div>
-        <div class="navItem">
-          <ul>
-            <li>
-              <a
-                href="https://www.facebook.com/flow.with.bro"
-                target="_blank"
-                class="fa fa-facebook"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.instagram.com/flowwith.bro/?hl=en"
-                target="_blank"
-                class="fa fa-instagram"
-              ></a>
-            </li>
-            <li>
-              <a
-                href="https://www.youtube.com/channel/UC3dtpy2OUNgS6gLWYuugJkw"
-                target="_blank"
-                class="fa fa-youtube"
-              ></a>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+</head>
 
-    <h1 class="bottomBorder">
-      CONTACT ME
-    </h1>
+<link rel="icon" href="./img/favicon32.png" sizes="16x16" type="png" />
 
-    <p>Leave a message for Bro!</p>
-
-    <div class="navContainer">
-      <a
-        href="mailto:leylaheps@hotmail.com?subject=Enquiry"
-        target="_blank"
-        class="fa fa-envelope"
-      >
+<body>
+  <header>
+    <!-- Mobile -->
+    <div class="topnav">
+      <a href="./index.html" class="active">Logo</a>
+      <!-- Navigation links (hidden by default) -->
+      <div id="myLinks">
+        <a href="./index.html">Home</a>
+        <a href="./About Me.html">About Me</a>
+        <a href="./Art.html">Art</a>
+        <a href="./Classes.html">Classes</a>
+        <a href="./Contact.html">Contact</a>
+      </div>
+      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
       </a>
     </div>
-  </body>
+    <!-- desktop -->
+    <nav class="navContainer">
+      <div class="navItem">
+        <div class="dot">
+          <a href="./index.html">FlowithBro</a>
+        </div>
+      </div>
+      <div class="navItem">
+        <ul>
+          <li>
+            <a href="./About Me.html">About Me</a>
+          </li>
+          <li>
+            <a href="./Art.html">Projects</a>
+          </li>
+          <li>
+            <img src="./img/yinyang.png" alt="Bronagh OShea Yoga" height="40px" />
+          </li>
+          <li>
+            <a href="./Classes.html">Classes</a>
+          </li>
+          <li>
+            <a href="./Contact.html">Contact Me</a>
+          </li>
+        </ul>
+      </div>
+      <div class="navItem">
+        <ul>
+          <li>
+            <a href="https://www.facebook.com/flow.with.bro" target="_blank" class="fa fa-facebook"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/flowwith.bro/?hl=en" target="_blank" class="fa fa-instagram"></a>
+          </li>
+          <li>
+            <a href="https://www.youtube.com/channel/UC3dtpy2OUNgS6gLWYuugJkw" target="_blank"
+              class="fa fa-youtube"></a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <h1 class="bottomBorder">
+    CONTACT ME
+  </h1>
+
+  <p>Leave a message for Bro!</p>
+
+  <div class="navContainer">
+    <a href="mailto:leylaheps@hotmail.com?subject=Enquiry" target="_blank" class="fa fa-envelope">
+    </a>
+  </div>
+</body>
+
 </html>

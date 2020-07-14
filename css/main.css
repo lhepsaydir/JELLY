@@ -4,18 +4,12 @@ body {
   padding: 0;
 }
 
-.dot {
-  height: 60px;
-  width: 60px;
-  background-color: #ffc9c9;
-  border-radius: 50%;
-  display: flex;
-  align-items: center;
-}
-.navContainer .navItem .dot :hover {
-  color: white;
-}
-
+/* /////////////////////////////////////
+//
+// HEADER TAGS 
+//
+// /////////////////////////////////////
+*/
 h1 {
   margin: 25px;
   color: #5fbabc;
@@ -23,6 +17,12 @@ h1 {
   font-weight: 400;
   font-size: 60px;
   text-align: center;
+}
+
+p {
+  font-size: 20px;
+  text-align: center;
+  color: black;
 }
 
 h3 {
@@ -34,52 +34,8 @@ h3 {
   margin: 0;
 }
 
-.aboutMeTextSecondary {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.aboutMeTextSecondary .iconWrapper h3 {
-  margin: 0;
-}
-
-.iconWrapper h3 {
-  margin-left: 15px;
-}
-
-p {
-  font-size: 20px;
-  text-align: center;
-  font-family: "PT Sans Narrow", sans-serif;
-  color: black;
-  margin: 10px 15vh 0 15vh;
-}
-
-.hero {
-  position: absolute;
-  top: 25%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  width: 100%;
-}
-
 br {
   margin: 20px;
-}
-
-.hero h1 {
-  font-weight: 700;
-  font-size: 10vh;
-  color: white;
-}
-
-.hero p {
-  color: white;
-  font-weight: 200;
-  font-size: 4vh;
-  opacity: 0.85;
 }
 
 .bottomBorder {
@@ -90,6 +46,193 @@ br {
   border-width: 3px;
 }
 
+ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+
+li {
+  list-style-type: none;
+}
+
+a:visited {
+  color: black;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+}
+
+a:hover {
+  color: #ffc9c9;
+}
+
+.iconWrapper {
+  display: flex;
+  width: 20vw;
+  border-bottom: solid;
+  border-color: #ffc9c9;
+  border-width: 1px;
+  justify-content: center;
+  align-items: center;
+}
+
+.picsWrapper {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.aboutMeTextSecondary p,
+.classes p {
+  font-size: 15px;
+  margin-bottom: 20px;
+}
+
+.picsRow {
+  height: 350px;
+  width: auto;
+  margin: 2vh;
+}
+
+a.fa {
+  padding: 15px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  border-radius: 50%;
+  background: #ffc9c9;
+  color: black;
+}
+
+/* Add a hover effect if you want */
+a.fa:hover {
+  color: white;
+}
+
+span.fa {
+  background: none;
+  font-size: 15px;
+  color: #5fbabc;
+}
+
+span.fa:hover {
+  color: #5fbabc;
+}
+
+/* /////////////////////////////////////
+//
+// HOME PAGE 
+//
+// /////////////////////////////////////
+*/
+.indexContainer {
+  width: auto;
+  height: 100vh;
+  position: relative;
+  text-align: center;
+}
+
+.indexChild {
+  width: 100%;
+  height: 100%;
+  background-image: url("../img/IndexPic.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.indexChild h1 {
+  font-weight: 700;
+  font-size: 10vh;
+  color: white;
+  margin: 0;
+  padding-top: 60px;
+}
+
+.indexChild p {
+  color: white;
+  font-weight: 200;
+  font-size: 4vh;
+}
+
+/* /////////////////////////////////////
+//
+// ABOUT ME PAGE 
+//
+// /////////////////////////////////////
+*/
+.aboutMeWrapper {
+  display: flex;
+  justify-content: center;
+  padding: 0 20px;
+}
+
+.aboutMeTextSecondary {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.aboutMePicWrapper {
+  min-width: 300px;
+  width: 300px;
+  max-height: 300px;
+  margin: 0 40px;
+  margin-bottom: 20px;
+}
+
+.aboutMePicWrapper img {
+  width: 100%;
+  height: auto;
+}
+
+.aboutMeTextSecondary p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.aboutMeText p {
+  margin-bottom: 20px;
+}
+
+/* ///////////////////////////////////// 
+//
+// CLASSES PAGE
+//
+// /////////////////////////////////////
+*/
+.classesWrapper {
+  width: 100%;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.classes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  max-width: 900px;
+  padding: 0 20px;
+}
+
+.iconWrapper h3 {
+  margin-left: 15px;
+}
+
+/* /////////////////////////////////////
+//
+// NAV CONTAINER  
+//
+// /////////////////////////////////////
+*/
 .navContainer {
   display: flex;
   justify-content: center;
@@ -118,119 +261,86 @@ br {
   margin-right: 20px;
 }
 
-ul {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin: 0;
-  padding: 0;
-}
-
-li {
-  list-style-type: none;
-}
-
-a:visited {
-  color: black;
-}
-
-a {
-  text-decoration: none;
-  color: black;
-}
-
-a:hover {
-  color: #ffc9c9;
-}
-
-.indexContainer {
-  width: auto;
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  margin: 20px;
-}
-
-.indexChild {
-  width: 100%;
-  height: 100%;
-  background-image: url("../img/IndexPic.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-.iconWrapper {
-  display: flex;
-  width: 20vw;
-  border-bottom: solid;
-  border-color: #ffc9c9;
-  border-width: 1px;
-  justify-content: center;
-  align-items: center;
-}
-
-.picsWrapper {
-  display: flex;
-  justify-content: center;
-  width: 100%;
-}
-
-.aboutMeWrapper {
-  display: flex;
-  justify-content: center;
-}
-
-.aboutMeText p {
-  margin: 10px 0 0 0;
-}
-
-.classes {
-  margin: 0 15vh 0px 15vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-}
-
-.aboutMeTextSecondary p,
-.classes p {
-  font-size: 15px;
-  margin-bottom: 20px;
-}
-
-.picsRow {
-  height: 350px;
-  width: auto;
-  margin: 2vh;
-}
-
-.aboutMePics {
-  max-width: 300px;
-  height: auto;
-  margin: 0 40px 0 40px;
-}
-
-a.fa {
-  padding: 15px;
-  font-size: 30px;
-  width: 30px;
-  text-align: center;
-  border-radius: 50%;
-  background: #ffc9c9;
-  color: black;
-}
-
-/* Add a hover effect if you want */
-a.fa:hover {
+.navContainer .navItem .dot :hover {
   color: white;
 }
 
-span.fa {
-  background: none;
-  font-size: 15px;
-  color: #5fbabc;
+.dot {
+  height: 60px;
+  width: 60px;
+  padding: 12px;
+  background-color: #ffc9c9;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
 }
 
-span.fa:hover {
-  color: #5fbabc;
+/* /////////////////////////////////////
+//
+// BURGER NAV STYLES
+//
+// /////////////////////////////////////
+*/
+
+/* Style the navigation menu */
+.topnav {
+  overflow: hidden;
+  background-color: #ffc9c9;
+  position: relative;
+}
+
+/* Hide the links inside the navigation menu (except for logo/home) */
+.topnav #myLinks {
+  display: none;
+}
+
+/* Style navigation menu links */
+.topnav a {
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+  display: block;
+}
+
+/* Style the hamburger menu */
+.topnav a.icon {
+  background: black;
+  display: block;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+/* Add a grey background color on mouse-over */
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+/* Style the active link (or home/logo) */
+.active {
+  background-color: #ffc9c9;
+  color: black;
+}
+
+/* ////////////////////////////////////////////
+//
+// MOBILE VIEW 
+//
+// ////////////////////////////////////////////
+*/
+@media only screen and (min-width: 1025px) {
+  .topnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 1025px) {
+  .navContainer {
+    display: none;
+  }
+  .aboutMePicWrapper {
+    display: none;
+  }
 }
