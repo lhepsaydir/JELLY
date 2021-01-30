@@ -1,5 +1,5 @@
 body {
-  font-family: "PT Sans Narrow", sans-serif;
+  font-family: "PT Sans Narrow", sans-serif !important;
   margin: 0;
   padding: 0;
 }
@@ -13,7 +13,7 @@ body {
 h1 {
   margin: 25px;
   color: #5fbabc;
-  font-family: "Amatic SC", cursive;
+  font-family: "Amatic SC", cursive !important;
   font-weight: 400;
   font-size: 60px;
   text-align: center;
@@ -26,8 +26,8 @@ p {
 }
 
 h3 {
-  color: #5fbabc;
-  font-family: "Amatic SC", cursive;
+  color: #5fbabc !important;
+  font-family: "Amatic SC", cursive !important;
   font-weight: 400;
   font-size: 30px;
   text-align: center;
@@ -37,6 +37,14 @@ h3 {
 br {
   margin: 20px;
 }
+
+/* .navbar-header {
+  background-color: pink;
+}
+
+.navbar-toggle {
+  border: none !important;
+} */
 
 .bottomBorder {
   margin-left: 40px;
@@ -83,6 +91,7 @@ a:hover {
 
 .picsWrapper {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
 }
@@ -105,20 +114,19 @@ a.fa {
   width: 30px;
   text-align: center;
   border-radius: 50%;
-  background: #ffc9c9;
   color: black;
 }
 
 /* Add a hover effect if you want */
 a.fa:hover {
-  color: white;
+  color: pink;
 }
 
-span.fa {
+/* span.fa {
   background: none;
   font-size: 15px;
   color: #5fbabc;
-}
+} */
 
 span.fa:hover {
   color: #5fbabc;
@@ -221,6 +229,7 @@ span.fa:hover {
   flex-direction: column;
   max-width: 900px;
   padding: 0 20px;
+  width: 100%;
 }
 
 .iconWrapper h3 {
@@ -265,7 +274,7 @@ span.fa:hover {
   color: white;
 }
 
-.dot {
+/* .dot {
   height: 60px;
   width: 60px;
   padding: 12px;
@@ -273,7 +282,7 @@ span.fa:hover {
   border-radius: 50%;
   display: flex;
   align-items: center;
-}
+} */
 
 /* /////////////////////////////////////
 //
@@ -330,13 +339,16 @@ span.fa:hover {
 //
 // ////////////////////////////////////////////
 */
-@media only screen and (min-width: 1025px) {
+@media only screen and (min-width: 768px) {
   .topnav {
+    display: none;
+  }
+  .mobileOnly {
     display: none;
   }
 }
 
-@media only screen and (max-width: 1025px) {
+@media only screen and (max-width: 768px) {
   .navContainer {
     display: none;
   }
@@ -344,3 +356,16 @@ span.fa:hover {
     display: none;
   }
 }
+
+.header-img {
+  height: 100%;
+}
+
+.navbar-brand {
+  padding: 4px !important;
+}
+
+.navbar-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
