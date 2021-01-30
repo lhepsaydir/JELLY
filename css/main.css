@@ -60,6 +60,7 @@ ul {
   align-items: center;
   margin: 0;
   padding: 0;
+  text-decoration: none;
 }
 
 li {
@@ -368,4 +369,3 @@ span.fa:hover {
 .navbar-margin-bottom {
   margin-bottom: 0 !important;
 }
-
