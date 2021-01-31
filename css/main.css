@@ -4,6 +4,31 @@ body {
   padding: 0;
 }
 
+.pageWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.connectMeWrapper {
+  max-width: 960px;
+  width: 960px;
+}
+
+.socialsContainer {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.socialsContainer a {
+  margin: 12px;
+}
+
 /* /////////////////////////////////////
 //
 // HEADER TAGS 
@@ -87,8 +112,7 @@ a:hover {
   width: 100%;
 }
 
-.aboutMeTextSecondary p,
-.classes p {
+.aboutMeTextSecondary p {
   font-size: 15px;
   margin-bottom: 20px;
 }
@@ -137,38 +161,44 @@ span.fa:hover {
   text-align: center;
 }
 
-.indexChild {
+.indexText {
+  position: absolute;
+  top: 0;
   width: 100%;
-  height: 100%;
-  background-image: url("../img/IndexPic.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
+  margin-top: 60px;
 }
 
-.indexChild h1 {
-  font-weight: 700;
+.indexText h1 {
+  font-weight: 500;
   font-size: 10vh;
-  color: white;
+  color: black;
   margin: 0;
-  padding-top: 60px;
 }
 
-.indexChild p {
-  color: white;
+.indexText p {
+  color: black;
   font-weight: 200;
   font-size: 4vh;
 }
 
 /* /////////////////////////////////////
 //
-// ABOUT ME PAGE 
+// PROJECTS PAGE 
+//
+// /////////////////////////////////////
+*/
+.ethosPageWrapper {
+  max-width: 960px;
+}
+
+/* /////////////////////////////////////
+//
+// Journey PAGE 
 //
 // /////////////////////////////////////
 */
 .aboutMeWrapper {
-  display: flex;
-  justify-content: center;
-  padding: 0 20px;
+  max-width: 960px;
 }
 
 .aboutMeTextSecondary {
@@ -207,11 +237,7 @@ span.fa:hover {
 // /////////////////////////////////////
 */
 .classesWrapper {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  max-width: 960px;
 }
 
 .classes {
@@ -225,6 +251,25 @@ span.fa:hover {
 
 .iconWrapper h3 {
   margin-left: 15px;
+}
+
+.classTimesWrapper {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.classTimes {
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  border: #ffc9c9 2px solid;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* /////////////////////////////////////
@@ -241,13 +286,31 @@ span.fa:hover {
 }
 
 .navItem {
-  flex: 1;
+  flex: 2;
   display: flex;
   justify-content: center;
   align-items: center;
 }
 
-.navItem li {
+.left {
+  flex: 1;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.right a {
+  margin: 12px;
+}
+
+.navContainer li {
   margin: 0 12px;
 }
 
@@ -287,6 +350,7 @@ span.fa:hover {
   overflow: hidden;
   background-color: #ffc9c9;
   position: relative;
+  height: 70px;
 }
 
 /* Hide the links inside the navigation menu (except for logo/home) */
@@ -297,7 +361,7 @@ span.fa:hover {
 /* Style navigation menu links */
 .topnav a {
   color: white;
-  padding: 14px 16px;
+  padding: 24px 20px;
   text-decoration: none;
   font-size: 17px;
   display: block;
@@ -340,7 +404,50 @@ span.fa:hover {
   .navContainer {
     display: none;
   }
+
   .aboutMePicWrapper {
     display: none;
+  }
+
+  .indexText {
+    position: relative;
+    width: 100%;
+  }
+}
+
+@media only screen and (max-width: 900px) {
+  .ethosPageWrapper {
+    width: 100%;
+    padding: 0 12px;
+  }
+
+  .picsWrapper {
+    /* max-width: 600px; */
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    margin: 0;
+  }
+  .picsWrapper img {
+    max-width: 300px;
+    height: auto;
+  }
+}
+
+@media only screen and (max-width: 650px) {
+  .classTimesWrapper {
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .classTimes {
+    margin: 20px 0;
+  }
+
+  .connectMeWrapper {
+    max-width: 650px;
+    width: 100%;
   }
 }
