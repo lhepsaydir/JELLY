@@ -9,30 +9,46 @@
   <title>Flow with Bro || Home</title>
   <link rel="shortcut icon" href="http://example.com/favicon.ico" />
   <script type="text/javascript" src="./scripts/burgerNav.js"></script>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" />
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
+  <!-- Latest compiled JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+  <!-- jQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 </head>
 
-<link rel="icon" href="./img/favicon32.png" sizes="16x16" type="png" />
 
 <body>
   <header>
-    <!-- Mobile -->
-    <div class="topnav">
-      <a href='./index.html'>
-        <img src="./img/yinyang.png" alt="Bronagh OShea Yoga" height="30px" />
-      </a>
-      <!-- Navigation links (hidden by default) -->
-      <div id="myLinks">
-        <a href="./index.html">Home</a>
-        <a href="./Journey.html">Journey</a>
-        <a href="./Ethos.html">Ethos</a>
-        <a href="./Classes.html">Classes</a>
-        <a href="./Contact.html">Contact</a>
+    <nav class="navbar navbar-inverse navbar-light visible-xs navbar-margin-bottom"
+      style="background-color: #e3f2fd; border: none">
+      <div class="container-fluid">
+        <div class="navbar-header mb-0">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar"
+            style="background-color: #e3f2fd; border-color: #e3f2fd">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="/"><img class="header-img" src="./img/logo.png" /></a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar" style="background-color: #e3f2fd; border-color: pink">
+          <ul class="nav navbar-inverse" style="background-color: #e3f2fd">
+            <li class="active"><a href="/">Home</a></li>
+            <li><a href="./Journey.html">Journey</a></li>
+            <li><a href="./Ethos.html">Ethos</a></li>
+            <li><a href="./Classes.html">Classes</a></li>
+            <li><a href="./Contact.html">Contact Me</a></li>
+          </ul>
+        </div>
       </div>
-      <!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
-      <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-        <i class="fa fa-bars"></i>
-      </a>
-    </div>
+    </nav>
 
     <!-- desktop -->
     <nav class="navContainer">
@@ -67,11 +83,14 @@
     </nav>
   </header>
 
-  <div class="indexContainer">
-    <img src='./img/pic9.jpg' style='width: 100%;' />
-    <div class='indexText'>
-      <h1 class='indexHeader'>FLOW WITH ME</h1>
-      <p>Come flow with me!!!! yeah d00d !!</p>
+  <div class="pageWrapper">
+    <div class="indexPageWrapper">
+      <h1 class="bottomBorder">
+        COME FLO WITH ME
+      </h1>
+      <br />
+      <p>Yoga and Meditation to heal the soul</p>
+      <img src="./img/IndexPic.jpg" style='width: 100%;' />
     </div>
   </div>
 </body>
