@@ -10,6 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  background-color: #fdf2e9;
 }
 
 .connectMeWrapper {
@@ -29,6 +30,39 @@ body {
   margin: 12px;
 }
 
+.navbar-toggle {
+  border: none !important;
+  background-color: white !important;
+}
+
+.navbar-brand {
+  padding: 12px !important;
+}
+
+.navbar-header {
+  background-color: white !important;
+}
+
+.navbar-margin-bottom {
+  margin-bottom: 0 !important;
+}
+
+.navbar-collapse {
+  font-family: "Macondo", cursive !important;
+  background-color: white !important;
+  border: none !important;
+}
+
+.navbar-collapse a {
+  background-color: white !important;
+}
+
+.navbar-inverse {
+  background-color: white !important;
+}
+.icon-bar {
+  background-color: black !important;
+}
 /* /////////////////////////////////////
 //
 // HEADER TAGS 
@@ -37,7 +71,7 @@ body {
 */
 h1 {
   margin: 25px;
-  color: #5fbabc !important;
+  color: black !important;
   font-family: "Macondo", cursive !important;
   font-weight: 400;
   font-size: 60px !important;
@@ -51,7 +85,7 @@ p {
 }
 
 h3 {
-  color: #5fbabc !important;
+  color: black !important;
   font-family: "Macondo", cursive !important;
   font-weight: 400;
   font-size: 30px;
@@ -63,14 +97,6 @@ br {
   margin: 20px;
 }
 
-/* .navbar-header {
-  background-color: pink;
-}
-
-.navbar-toggle {
-  border: none !important;
-} */
-
 ul {
   display: flex;
   justify-content: center;
@@ -78,6 +104,7 @@ ul {
   margin: 0;
   padding: 0;
   text-decoration: none;
+  font-family: "Macondo", cursive !important;
 }
 
 li {
@@ -94,7 +121,7 @@ a {
 }
 
 a:hover {
-  color: #ffc9c9;
+  color: #065836;
 }
 
 .iconWrapper {
@@ -133,7 +160,7 @@ a.fa {
 
 /* Add a hover effect if you want */
 a.fa:hover {
-  color: pink;
+  color: #065836;
 }
 
 /* span.fa {
@@ -143,7 +170,7 @@ a.fa:hover {
 } */
 
 span.fa:hover {
-  color: #5fbabc;
+  color: #065836;
 }
 
 /* /////////////////////////////////////
@@ -274,7 +301,7 @@ span.fa:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: #ffc9c9 2px solid;
+  border: #065836 2px solid;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -300,6 +327,7 @@ span.fa:hover {
   display: flex;
   justify-content: center;
   align-items: center;
+  font-family: "Macondo", cursive;
 }
 
 .left {
@@ -332,10 +360,6 @@ span.fa:hover {
 .navItem:last-child > ul {
   margin-left: auto;
   margin-right: 20px;
-}
-
-.navContainer .navItem .dot :hover {
-  color: white;
 }
 
 /* /////////////////////////////////////
@@ -384,8 +408,8 @@ span.fa:hover {
 
 /* Style the active link (or home/logo) */
 .active {
-  background-color: #ffc9c9;
-  color: black;
+  background-color: #065836;
+  color: red;
 }
 
 /* ////////////////////////////////////////////
@@ -457,12 +481,4 @@ span.fa:hover {
 
 .header-img {
   height: 100%;
-}
-
-.navbar-brand {
-  padding: 4px !important;
-}
-
-.navbar-margin-bottom {
-  margin-bottom: 0 !important;
 }
