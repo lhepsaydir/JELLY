@@ -10,7 +10,7 @@ body {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: #fdf2e9;
+  background-color: #fff9f4;
 }
 
 .connectMeWrapper {
@@ -109,6 +109,7 @@ ul {
 
 li {
   list-style-type: none;
+  text-decoration: none !important;
 }
 
 a:visited {
@@ -116,12 +117,13 @@ a:visited {
 }
 
 a {
-  text-decoration: none;
+  text-decoration: none !important;
   color: black;
 }
 
-a:hover {
-  color: #065836;
+li a:hover {
+  color: brown !important;
+  text-decoration: none;
 }
 
 .iconWrapper {
@@ -144,8 +146,8 @@ a:hover {
 }
 
 .picsRow {
-  height: 350px;
-  width: auto;
+  width: 350px;
+  height: auto;
   margin: 2vh;
 }
 
@@ -160,7 +162,7 @@ a.fa {
 
 /* Add a hover effect if you want */
 a.fa:hover {
-  color: #065836;
+  color: brown;
 }
 
 /* span.fa {
@@ -170,7 +172,7 @@ a.fa:hover {
 } */
 
 span.fa:hover {
-  color: #065836;
+  color: brown;
 }
 
 /* /////////////////////////////////////
@@ -179,25 +181,17 @@ span.fa:hover {
 //
 // /////////////////////////////////////
 */
-.indexContainer {
-  width: auto;
-  height: 100vh;
-  position: relative;
-  text-align: center;
-  background-image: url("../img/indexPic.jpg");
-}
 
 .indexText {
   position: absolute;
-  top: 0;
-  width: 100%;
-  margin-top: 60px;
+   width: 100%;
+  margin-top: 300px;
 }
 
 .indexText h1 {
   font-weight: 500;
   font-size: 10vh;
-  color: black;
+  color: white  !important;
   margin: 0;
 }
 
@@ -214,7 +208,7 @@ span.fa:hover {
 // /////////////////////////////////////
 */
 .indexPageWrapper {
-  max-width: 960px;
+  max-width: 100%;
 }
 
 /* /////////////////////////////////////
@@ -301,7 +295,7 @@ span.fa:hover {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-  border: #065836 2px solid;
+  border: brown 2px solid;
   padding: 40px;
   display: flex;
   flex-direction: column;
@@ -320,6 +314,7 @@ span.fa:hover {
   justify-content: center;
   align-items: center;
   margin: 20px;
+  background-color: white;
 }
 
 .navItem {
@@ -362,56 +357,6 @@ span.fa:hover {
   margin-right: 20px;
 }
 
-/* /////////////////////////////////////
-//
-// BURGER NAV STYLES
-//
-// /////////////////////////////////////
-*/
-
-/* Style the navigation menu */
-.topnav {
-  overflow: hidden;
-  background-color: #ffc9c9;
-  position: relative;
-  height: 70px;
-}
-
-/* Hide the links inside the navigation menu (except for logo/home) */
-.topnav #myLinks {
-  display: none;
-}
-
-/* Style navigation menu links */
-.topnav a {
-  color: white;
-  padding: 24px 20px;
-  text-decoration: none;
-  font-size: 17px;
-  display: block;
-}
-
-/* Style the hamburger menu */
-.topnav a.icon {
-  background: black;
-  display: block;
-  position: absolute;
-  right: 0;
-  top: 0;
-}
-
-/* Add a grey background color on mouse-over */
-.topnav a:hover {
-  background-color: #ddd;
-  color: black;
-}
-
-/* Style the active link (or home/logo) */
-.active {
-  background-color: #065836;
-  color: red;
-}
-
 /* ////////////////////////////////////////////
 //
 // MOBILE VIEW 
@@ -432,8 +377,6 @@ span.fa:hover {
     display: none;
   }
 
-  .aboutMePicWrapper {
-    display: none;
   }
 
   .indexText {
@@ -449,7 +392,6 @@ span.fa:hover {
   }
 
   .picsWrapper {
-    /* max-width: 600px; */
     width: 100%;
     height: auto;
     flex-direction: column;
@@ -458,8 +400,7 @@ span.fa:hover {
     margin: 0;
   }
   .picsWrapper img {
-    max-width: 300px;
-    height: auto;
+    max-width: 80%
   }
 }
 
