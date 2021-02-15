@@ -79,7 +79,7 @@ h1 {
 }
 
 p {
-  font-size: 20px;
+  font-size: 16px;
   text-align: center;
   color: black;
 }
@@ -398,7 +398,7 @@ span.fa:hover {
   }
 
   .classTimes {
-    margin: 20px 0;
+    margin: 20px 20px;
   }
 
   .connectMeWrapper {
